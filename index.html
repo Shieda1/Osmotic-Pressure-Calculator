@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osmotic Pressure Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="osmoticPressureRadio" name="variables" checked>
+  <label for="osmoticPressureRadio">Osmotic Pressure</label>
+
+  <input type="radio" id="noofIonsProducedatDissociationofSoluteRadio" name="variables">
+  <label for="noofIonsProducedatDissociationofSoluteRadio">No. of Ions Produced at Dissociation of Solute</label>
+
+  <input type="radio" id="osmoticCoefficientRadio" name="variables">
+  <label for="osmoticCoefficientRadio">Osmotic Coefficient</label>
+
+  <input type="radio" id="molarorMolalConcentrationRadio" name="variables">
+  <label for="molarorMolalConcentrationRadio">Molar or Molal Concentration</label>
+
+  <input type="radio" id="absoluteTemperatureRadio" name="variables">
+  <label for="absoluteTemperatureRadio">Absolute Temperature</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(i) No. of Ions Produced at Dissociation of Solute</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(Φ) Osmotic Coefficient</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(C) Molar or Molal Concentration (mol/L)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(T) Absolute Temperature (K)</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
